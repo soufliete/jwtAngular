@@ -1,0 +1,8 @@
+<table *ngIf="listEtudiant">
+  <th>NOM :</th>
+  <th>PRENOM :</th>
+  <tr *ngFor="let f of listEtudiant._embedded.etudiants">
+    <td>{{f.nom}}</td>
+    <td>{{f.prenom}}</td>
+  </tr>
+</table>
